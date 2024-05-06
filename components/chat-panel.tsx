@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: `I'm a high school senior`,
+      subheading: `struggling with data structures concepts in computer science. I'm looking for a mentor with strong expertise in this area who can also help me develop my problem-solving skills.`,
+      message: `I'm a high school senior struggling with data structures concepts in computer science. I'm looking for a mentor with strong expertise in this area who can also help me develop my problem-solving skills.`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: `I'm a visual learner`,
+      subheading: `with a strong interest in artificial intelligence. I'd love a mentor who can explain complex concepts visually and guide me on projects that will help me build my portfolio.`,
+      message: `I'm a visual learner with a strong interest in artificial intelligence. I'd love a mentor who can explain complex concepts visually and guide me on projects that will help me build my portfolio.`
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: `As a first-generation college student`,
+      subheading: `I'm looking for a mentor who can offer guidance on navigating the academic world. Someone with experience in computer science and a patient, encouraging approach would be ideal.`,
+      message: `As a first-generation college student, I'm looking for a mentor who can offer guidance on navigating the academic world. Someone with experience in computer science and a patient, encouraging approach would be ideal.`
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: `I'm a motivated sophomore`,
+      subheading: `unsure of my specific career path. I'm looking for a well-rounded mentor who can help me explore different fields, develop my critical thinking skills, and provide guidance on choosing a major.`,
+      message: `I'm a motivated sophomore unsure of my specific career path. I'm looking for a well-rounded mentor who can help me explore different fields, develop my critical thinking skills, and provide guidance on choosing a major.`
     }
   ]
 

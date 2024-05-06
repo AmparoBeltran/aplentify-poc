@@ -1,15 +1,9 @@
 import * as React from 'react'
 import Link from 'next/link'
 
-import { cn } from '@/lib/utils'
 import { auth } from '@/auth'
-import { Button, buttonVariants } from '@/components/ui/button'
-import {
-  IconGitHub,
-  IconNextChat,
-  IconSeparator,
-  IconVercel
-} from '@/components/ui/icons'
+import { Button } from '@/components/ui/button'
+import { IconAplentify, IconSeparator } from '@/components/ui/icons'
 import { UserMenu } from '@/components/user-menu'
 import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
@@ -29,8 +23,8 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
-          <IconNextChat className="size-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden size-6 mr-2 dark:block" />
+          <IconAplentify className="size-6 mr-2 dark:hidden" inverted />
+          <IconAplentify className="hidden size-6 mr-2 dark:block" />
         </Link>
       )}
       <div className="flex items-center">
@@ -55,7 +49,7 @@ export function Header() {
           <UserOrLogin />
         </React.Suspense>
       </div>
-      <div className="flex items-center justify-end space-x-2">
+      {/* <div className="flex items-center justify-end space-x-2">
         <a
           target="_blank"
           href="https://github.com/vercel/nextjs-ai-chatbot/"
@@ -74,7 +68,7 @@ export function Header() {
           <span className="hidden sm:block">Deploy to Vercel</span>
           <span className="sm:hidden">Deploy</span>
         </a>
-      </div>
+      </div> */}
     </header>
   )
 }

@@ -88,6 +88,45 @@ function IconNextChat({
   )
 }
 
+function IconAplentify({
+  className,
+  inverted,
+  ...props
+}: React.ComponentProps<'svg'> & { inverted?: boolean }) {
+  const id = React.useId()
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fillRule="evenodd"
+      strokeLinejoin="round"
+      strokeMiterlimit="2"
+      clipRule="evenodd"
+      viewBox="0 0 326 326"
+      className={cn('size-4', className)}
+      {...props}
+    >
+      <circle
+        cx="632.402"
+        cy="812.575"
+        r="144.753"
+        fill="#64C9CD"
+        transform="translate(-487.649 -657.57) translate(-60.367 -92.923) scale(1.12379)"
+      ></circle>
+      <path
+        fill="#fff"
+        d="M1086.84 596.515c0-16.696-12.34-30.252-27.54-30.252s-27.54 13.556-27.54 30.252v96.158h27.54c15.2 0 27.54-13.555 27.54-30.252v-65.906z"
+        transform="translate(-487.649 -657.57) translate(18.689 5.092) matrix(1.02225 1.02598 -.93062 .93402 112.397 -859.651)"
+      ></path>
+      <path
+        fill="#fff"
+        d="M1086.84 596.626c0-16.758-12.34-30.363-27.54-30.363s-27.54 13.605-27.54 30.363v65.684c0 16.758 12.34 30.363 27.54 30.363s27.54-13.605 27.54-30.363v-65.684z"
+        transform="translate(-487.649 -657.57) translate(18.689 5.092) matrix(1.026 -1.02974 .93062 .93402 -1002.38 1318.02)"
+      ></path>
+    </svg>
+  )
+}
+
 function IconOpenAI({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
     <svg
@@ -478,7 +517,8 @@ function IconChevronUpDown({
 
 export {
   IconEdit,
-  IconNextChat,
+  // IconNextChat,
+  IconAplentify,
   IconOpenAI,
   IconVercel,
   IconGitHub,
